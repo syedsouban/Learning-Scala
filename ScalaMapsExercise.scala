@@ -13,14 +13,14 @@ object ScalaMapsExercise {
     
     val sysprops = new SystemProperties 
     
-    var keys = (sysprops).keySet
-    
-    val maxKeyLength = keys map(_.length) max
+    val maxKeyLength = sysprops.keySet map(_.length) max
     
     println(maxKeyLength)   
-    for((k,v) <- sysprops) {
-      println(f"$k%38s | $v")
-    }
+    
+    
+    sysprops.foreach(t=> {
+      println(f"${t._1}%38s | ${t._2}")
+    })
       
     val tuple:Tuple2[Int,Int]=minmax(Array(4,-2,12,-9,3,1,0))
     println(tuple._1+" "+tuple._2)

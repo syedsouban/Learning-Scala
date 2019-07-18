@@ -3,11 +3,12 @@ import scala.io.StdIn.{readLine, readInt}
 object HelloScala {
   def main(args: Array[String]): Unit = {
     
+    println(myf)
     val name = readLine()
     print("Hello: "+name);
     val age=readInt()
     println(age)
-    
+   
     
 //    println(fact(5))
   }

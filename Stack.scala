@@ -21,5 +21,4 @@ object Main {
     println(stack.pop())
     println(stack.peek)
   }
-  
 }
