@@ -37,7 +37,11 @@ object learningTailRec {
   
   def main(args:Array[String]) {
     
+<<<<<<< HEAD
    val range:Int=10000
+=======
+   val range:Int=10000000
+>>>>>>> cc693cad8e4a2a38cc9b9d245415743e3de8aadc
    val t1 = System.nanoTime
 
 	 val sum1=headRecSum((1 to 4000).toList)
